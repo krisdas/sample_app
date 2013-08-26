@@ -18,7 +18,9 @@ SampleApp::Application.routes.draw do
   match '/static_pages/contact', to: 'static_pages#contact', via: 'get'
   match '/static_pages/home', to: 'static_pages#home', via: 'get'
   match '/static_pages/', to: 'static_pages#home', via: 'get'
+  match '/static_pages/signup', to: 'users#new', via: 'get'
   match '/', to: 'static_pages#home', via: 'get'
+  match '/users/new', to: 'users#new', via: 'get'
 
 
 #  match '/help',    :to => 'static_pages/help', via: [:get, :post]

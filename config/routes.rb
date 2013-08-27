@@ -13,6 +13,7 @@ SampleApp::Application.routes.draw do
 #root "static_pages/home"
 #  match '/help', to: 'static_pages#help', via: 'get'
  # root  'static_pages#home'
+  resources :users
   match '/static_pages/help',    to: 'static_pages#help',    via: 'get'
   match '/static_pages/about',   to: 'static_pages#about',   via: 'get'
   match '/static_pages/contact', to: 'static_pages#contact', via: 'get'
